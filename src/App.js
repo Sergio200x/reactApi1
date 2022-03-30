@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-
-import DashBoard from './Components/dashboard';
+import TotalUsers from './Components/totalUsers';
+import LastUser from './Components/lastUser';
 
 function App() {
   return (
     <div className="App">
-      <DashBoard></DashBoard>
+      {/* <TotalUsers/> */}
+      <LastUser/> 
     </div>
   );
   
