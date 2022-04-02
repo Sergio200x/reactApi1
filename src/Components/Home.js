@@ -8,7 +8,7 @@ function Home (){
             <div className='principal_container'> 
                 <h1 className='h1_dash'>Dashboard All Clean</h1> 
                     
-                    <h2 className='h3_dash'>Beinvenidos/as.</h2> 
+                    <h2 className='h3_dash'>Bienvenidos/as.</h2> 
                     <h3>
                         <Link to="/totalUsuarios" >Consulta de usuarios</Link> 
                         
