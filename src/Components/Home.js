@@ -10,14 +10,14 @@ function Home (){
                     
                     <h2 className='h3_dash'>Beinvenidos/as.</h2> 
                     <h3>
-                        <Link to="/totalUsuarios" >Total de usuarios</Link> 
+                        <Link to="/totalUsuarios" >Consulta de usuarios</Link> 
                         
                     </h3>
                     <h3>
-                        Total de Productos
+                    <Link to='/products'>Consulta de Productos</Link> 
                     </h3>
                     <h3>
-                        Total de Categorias
+                    <Link to='/Categorias'>Consulta de Categorias</Link> 
                     </h3>
                     
                     

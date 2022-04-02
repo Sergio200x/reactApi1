@@ -28,15 +28,15 @@ return user
                 <h1 className='h1_dash'>Total de Usuarios</h1> 
                     
                     <h3 className='h3_dash'>{usuariosTOTAL.count}</h3>
-                    <div>
+                    {/* /*{ <div>
                             <ul>
                             {usuarios.map(function(user, i){
                             return ( fetch("http://localhost:3030/api/user/"+user.UserID)
                              .then(response => response.json())
-                             .then( data1 =>{ return data1.data} )
+                             .then( data1 =>{ return (data1.data)} )
                              .catch(error =>console.error(error)))
                             </ul>
-                    </div>
+                    </div> }*/ }
                         <h2 className='volver'>
                         <Link to="/" >Volver al Inicio</Link>
                         </h2> 
