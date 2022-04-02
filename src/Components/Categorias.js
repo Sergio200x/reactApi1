@@ -12,15 +12,15 @@ function Categorias (){ const [productsDetail1, setproductsDetail1]= useState([]
   
 const productName=(productsDetail1)
 
-console.log(productName[0].Category)
+let nombresSinSetear=[]
+let nombresSeteado=[]
+productName.map(function(user, i){
+    nombresSinSetear.push(user.Category.Name)   
+    nombresSeteado = new Set(nombresSinSetear)
+   return   nombresSeteado
+          
+})
 
-
-
- 
-// let result = productName.Category.Name.filter((item,index)=>{
-//     return productName.Category.Name.indexOf(item) === index;
-//   })
-// console.log(result)
 
 
  
@@ -28,16 +28,16 @@ console.log(productName[0].Category)
     return (
             <div className='principal_container'> 
                <Link to='/products'> <h1 className='h1_dash'>Categorias</h1> </Link>
-                    <h3 className='h3_dash'>Tenes un total de {} productos</h3>
+                    <h3 className='h3_dash'>Tenes un total de {nombresSeteado.length} productos</h3>
                         <div>
                         <h4>Detalle de producto</h4>
-                            { <div>
-                            {productName.map(function(user, i){
+                            { <div> <li>{nombresSeteado}</li>
+                            {/* {nombresSeteado.map(function(user, i){
                             return <ul key={i}>
-
-                                    <li className="lista"> <strong>Descripcion:</strong>{user.Category.Name} </li>
+                                    
+                                    <li className="lista"> <strong>Descripcion:</strong>{user} </li>
                                 </ul>                            
-                            })}
+                            })} */}
                             </div> }
                         </div> 
                         <h2 className='volver'>
