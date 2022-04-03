@@ -27,7 +27,8 @@ const productName=(productsDetail1)
 
     return (
             <div className='principal_container'> 
-               <Link to='/products'> <h1 className='h1_dash'>Productos</h1> </Link>
+            <div className='products'>
+               <h1 className='h1_dash'>Productos</h1> 
                     <h3 className='h3_dash'>Tenes un total de {counts.count} productos</h3>
                         <div>
                         <h4>Detalle de producto</h4>
@@ -40,8 +41,9 @@ const productName=(productsDetail1)
                             </div> }
                         </div> 
                         <h2 className='volver'>
-                        <Link to="/" >Volver al Inicio</Link>
+                        <Link to="/"className='volverlink' >Volver al Inicio</Link>
                     </h2> 
+                </div>
             </div>
         )    
 }

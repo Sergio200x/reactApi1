@@ -22,13 +22,13 @@ function LastUser() {
            ultimo= "No hay datos"                
       }}
 
-      console.log(ultimo)
+      
  
 
 
   return (
-    <div>
-           <h3>Ultimo Usuario creado</h3> 
+    <div> 
+           <h3 className="h3_home">Ultimo Usuario creado</h3> 
              <div className='contenedor-lastuser'>
                <li><strong>Nombre:</strong> {ultimo.Name}</li>
                <li><strong>Apellido:</strong> {ultimo.LastName}</li>
