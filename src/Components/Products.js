@@ -31,7 +31,7 @@ const productName=(productsDetail1)
                     <h3 className='h3_dash'>Tenes un total de {counts.count} productos</h3>
                         <div>
                         <h4>Detalle de producto</h4>
-                            { <div>
+                            { <div className='contenedor'>
                             {productName.map(function(user, i){
                             return <ul key={i}>
                                     <li className="lista"> <strong>Descripcion:</strong>  {user.Name} </li>

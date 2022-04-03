@@ -20,18 +20,13 @@ productName.map(function(user, i){
    return (Array.from(nombresSeteado))
           
 })
-
-
-
- 
-
     return (
             <div className='principal_container'> 
                <Link to='/products'> <h1 className='h1_dash'>Categorias</h1> </Link>
                     <h3 className='h3_dash'>Tenes un total de {nombresSeteado.size} categorias</h3>
                         <div>
                         <h4>Lista de Categorias</h4>
-                            { <div> 
+                            { <div className='contenedor'> 
                             { Array.from(nombresSeteado).map(function(user, i){
                             return <ul key={i}>
                                     

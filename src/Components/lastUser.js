@@ -1,28 +1,18 @@
 import { useState, useEffect, useRef, useReducer } from "react";
+import '../css.css'
 
 function LastUser() {
-  const [user, setUser] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3030/api/users")
-      .then((response) => response.json())
-      .then((usuarios) => {    
-                             let usuariosID=usuarios.data[2].UserID
-                                console.log(usuariosID)
-                            fetch("http://localhost:3030/api/user/"+{usuariosID})
-                            .then((response) => response.json())
-                            .then((data) => {
-                            setUser(data) 
-                            
-                            });
-                            
-                        })
-      .catch((error) => console.error(error));
-     
-  }, []);
+    const [user, setuser]= useState([])    
+    useEffect (() => {        
+        fetch("http://localhost:3030/api/products")
+        .then(response => response.json())
+        .then( data =>{ setuser(data.data)} )
+        .catch(error =>console.error(error))
+        }, [])
 
 
- 
+ let ultimo= user[user.length-1].UserID
+ console.log(ultimo)
 
 
   return (
