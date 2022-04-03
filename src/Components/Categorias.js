@@ -20,6 +20,8 @@ productName.map(function(user, i){
    return (Array.from(nombresSeteado))
           
 })
+
+
     return (
             <div className='principal_container'> 
                <Link to='/products'> <h1 className='h1_dash'>Categorias</h1> </Link>
