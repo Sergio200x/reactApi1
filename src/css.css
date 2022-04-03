@@ -8,6 +8,7 @@ body{
     max-width: 1400px;
     text-align: center;
     margin: auto;
+    background: linear-gradient(to right, rgb(9, 151, 246), rgb(21, 197, 168));
 }
 
 .contenedor
