@@ -32,7 +32,7 @@ productName.map(function(user, i){
                             { Array.from(nombresSeteado).map(function(user, i){
                             return <ul key={i}>
                                     
-                                    <li className="lista"> <strong>Descripcion:</strong>{user} </li>
+                                    <li className="lista"> <strong>{i+1}-</strong>{user} </li>
                                 </ul>                            
                             })} 
                             </div> }

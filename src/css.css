@@ -5,15 +5,57 @@ li{
 
 }
 body{
-    max-width: 1400px;
-    text-align: center;
+        
     margin: auto;
-    background: linear-gradient(to right, rgb(9, 151, 246), rgb(21, 197, 168));
+    /*background-color:  whitesmoke;*/
+    background-image: url(../public/banner-1.jpg);
+    
 }
 
 .contenedor
 {
-    margin-left: 30%;
+       
     
 }
 
+.principal_container
+{   
+    position: relative;
+    width: 1400px;   
+    
+}
+
+.home
+{   width: 500px;
+    height: 1200px;
+    border: 5px solid #286698;
+    padding-bottom: 7%;
+    padding-top: 7%;  
+    position: absolute;
+    background-color: whitesmoke;
+    opacity: 80%;
+    
+    
+}
+.lastuser
+{   margin: auto;
+    position: absolute;
+    left: 150%;
+    top: 5%;
+    width: 600px;
+    height: 300px;
+    border: 5px solid #286698;
+    padding: 3%;
+    background-color: whitesmoke;   
+    opacity: 98%;
+    border-radius: 1%;
+    font-size: 150%;    
+    
+}
+
+.contenedor-lastuser
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}

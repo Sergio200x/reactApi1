@@ -34,7 +34,7 @@ const productName=(productsDetail1)
                             { <div className='contenedor'>
                             {productName.map(function(user, i){
                             return <ul key={i}>
-                                    <li className="lista"> <strong>Descripcion:</strong>  {user.Name} </li>
+                                    <li className="lista"> <strong>{i+1}-</strong>  {user.Name} </li>
                                 </ul>                            
                             })}
                             </div> }
