@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+body{       
+    margin: auto;
+    background-image: url(../public/banner-1.jpg);
+    background-size:100%;
+}
+
+.principal_container{   
+    /* position: relative; */
+    max-width: 1400px;   
+}
+
+.home h1, .home h2{
+    color: #286698;
+}
+
+.home{
+    width: 40vw;
+    height: 100vh;
+    border: 5px solid #286698;  
+    background-color: whitesmoke;
+    opacity: 80%;  
+}
